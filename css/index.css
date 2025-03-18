@@ -1,0 +1,456 @@
+
+.hero {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 50px 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-text {
+    margin-bottom: 100px; /* Add margin below the hero text */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white; /* Light grey background */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 0.90em;
+    margin-bottom: 5px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #efeeee;
+    width: 200px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: rgb(62, 62, 255);
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.search-button:hover {
+    background-color: darkblue;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #0b31d5; /* Blue background */
+    color: white;
+    padding: 40px 10%; /* Adjust padding to match the overall layout */
+    font-family: 'Arial', sans-serif;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+    margin: 0 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.step i {
+    font-size: 2em;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.step-text {
+    text-align: left;
+}
+
+.step-text h2 {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.step-text h2:after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.step-text p {
+    font-size: 0.90em;
+    line-height: 1.5;
+}
+
+.category-section {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.category-button {
+    background-color: rgb(62, 62, 255);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.75em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.category-heading {
+    font-size: 1.8em;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.category-heading:after {
+    content: '';
+    display: block;
+    width: 5%;
+    height: 1.7px;
+    background-color: rgb(62, 62, 255);
+    margin: 10px auto 0 auto;
+}
+
+.category-paragraph {
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(146, 146, 146);
+    font-family: Georgia;
+}
+
+.category-box-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px auto 0 auto; /* Added margin for spacing between paragraph and div */
+    width: 100%;
+    max-width: 1200px; /* Adjust this value to match the width of the banner */
+}
+
+.category-box {
+    background-color: white;
+    border: 0px solid #e9e8e8;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Adjust the width to fit 4 boxes per row */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    height: 160px; /* Make each box a square */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-box i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgb(105, 105, 236);
+}
+
+.category-box p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: serif;
+}
+
+.banner-section {
+    position: relative;
+    background-image: url('http://localhost/JobPortal/Banners/banner3.png'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    background-color: rgba(11, 49, 213, 0.7); /* Light blue color with transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.get-started-button {
+    background-color: white;
+    color: rgb(57, 64, 243);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.90em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.banner-heading {
+    font-size: 1.8em;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner-heading:after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 1.5px;
+    background-color: white;
+    margin: 10px auto 0 auto;
+}
+
+.banner-paragraph {
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.upload-cv-button {
+    background-color: white;
+    color: rgb(57, 64, 243);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 0.90em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-cv-button i {
+    margin-right:10px;
+    font-size: 1em;
+}
+
+.hot-jobs-section {
+    background-color: lightgrey;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hot-jobs-button {
+    background-color: rgb(62, 62, 255);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.75em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.recent-jobs-heading {
+    font-size: 1.8em;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.recent-jobs-heading:after {
+    content: '';
+    display: block;
+    width: 7%;
+    height: 1.7px;
+    background-color: rgb(62, 62, 255);
+    margin: 10px auto 0 auto;
+}
+
+.recent-jobs-paragraph {
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(146, 146, 146);
+    font-family: Georgia;
+}
+/* Other existing styles */
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job {
+    display: flex;
+    width: 48%;
+    padding: 20px;
+    /* Increase padding for better spacing */
+    margin-bottom: 25px;
+    /* Adjust bottom margin for better spacing between job cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    min-height: 160px;
+    /* Adjust the minimum height */
+}
+.category-box-container1 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Ensure child elements stack vertically */
+    align-items: center; /* Center content */
+    margin: 70px auto; /* Center the container and add top margin */
+    width: 100%;
+    max-width: 1200px; /* Adjust this value to match the width of the banner */
+}
+
+.job-listings1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the job cards */
+    margin: 0; /* Remove margins if any are causing issues */
+    padding: 0; /* Ensure there's no padding that might cause overflow */
+    width: 100%; /* Allow it to take full width */
+}
+
+.job1 {
+    display: flex;
+    width: 48%; /* Width of each job card */
+    padding: 20px;
+    margin: 0 1%; /* Centering with horizontal margins */
+    margin-bottom: 25px; /* Adjust bottom margin for better spacing between job cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    min-height: 160px; /* Adjust the minimum height */
+}
+
+
+.company-logo {
+    width: 70px;
+    /* Increase logo size */
+    height: auto;
+    /* Increase logo size */
+    margin-right: 25px;
+}
+
+.job-details {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.job-title {
+    font-size: 20px;
+    /* Slightly increase font size for better readability */
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 16px;
+
+}
+
+.job-type {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    /* Slightly increase padding */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.job-description {
+    color: rgba(11, 49, 213, 0.8);
+    margin: 10px 0;
+    text-align: left;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    /* Adds 5px space between the info boxes */
+    margin-top: 15px;
+    /* Ensure horizontal alignment */
+}
+
+.info-box {
+    background-color: rgba(11, 49, 213, 0.1);
+    /* Light blue with transparency */
+    width: 30%;
+    font-size: 14px;
+    color: #333;
+    padding: 4px;
+    color: rgba(11, 49, 213, 0.8);
+
+}
